@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marwadi University - Department of Computer Engineering</title>
+  <style>
+    /* Reset */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;background:#ffffff;font-family:Arial, Helvetica, sans-serif;color:#222;}
+
+    /* Page container */
+    .page {
+      max-width:850px;
+      margin:18px auto;
+      border-radius:2px;
+      overflow:hidden;
+      border:1px solid transparent;
+    }
+
+    /* Top dark blue header */
+    .topbar{
+      background:#0b4b86; /* deep sea blue similar to image */
+      color:#fff;
+      padding:28px 30px 18px;
+      text-align:center;
+    }
+    .topbar h1{
+      font-size:20px;
+      margin-bottom:6px;
+      font-weight:700;
+      letter-spacing:0.3px;
+    }
+    .topbar p{
+      margin:0;
+      font-size:13px;
+      opacity:0.95;
+      font-weight:600;
+    }
+
+    /* Secondary nav bar */
+    .nav{
+      background:#0b5f95; /* slightly different blue strip under header */
+      color:#fff;
+      display:flex;
+      justify-content:center;
+      gap:26px;
+      padding:9px 12px;
+      font-size:13px;
+      border-bottom:4px solid rgba(255,255,255,0.03);
+    }
+    .nav a{color:#fff;text-decoration:none;font-weight:600;opacity:0.95}
+
+    /* Main content area */
+    .content{
+      padding:20px 18px 42px;
+      background:#f7f9fb;
+    }
+
+    /* Card style boxes */
+    .card{
+      background:#fff;
+      border:1px solid #e5e8ee;
+      border-radius:4px;
+      padding:14px 18px;
+      margin:14px 0;
+      box-shadow:0 0 0 4px rgba(245,246,248,0.8) inset;
+    }
+
+    .card h3{
+      color:#0b4b86;
+      font-size:13px;
+      margin-bottom:8px;
+      font-weight:700;
+    }
+
+    .card p, .card ul, .card ol{
+      font-size:12px;
+      color:#333;
+      line-height:1.45;
+    }
+
+    /* Program Specific Outcomes area uses small list numbers */
+    .psos ol{padding-left:20px;color:#333;font-size:12px}
+
+    /* A thin icon-like bar (mimic screenshot toolbar area) */
+    .toolbar{
+      height:34px;
+      margin:10px 0;
+      background:linear-gradient(#e7eef7,#f5f8fb);
+      border-radius:3px;
+      border:1px solid #d9e3ee;
+      display:flex;
+      align-items:center;
+      padding:6px 8px;
+      gap:10px;
+      font-size:12px;
+      color:#2b5d87;
+    }
+
+    /* Courses and Top Recruiters use bullet lists */
+    .courses ul, .recruiters ul{
+      padding-left:20px;
+    }
+    .courses li, .recruiters li{
+      font-size:12px;
+      margin:4px 0;
+      list-style:disc;
+      color:#222;
+    }
+
+    /* Footer deep blue */
+    .footer{
+      background:#0b4b86;
+      color:#fff;
+      text-align:center;
+      padding:12px 10px;
+      font-size:12px;
+      margin-top:8px;
+    }
+
+    /* Make sure content boxes visually similar to screenshot spacing */
+    .spacer{height:8px}
+  </style>
+</head>
+<body>
+  <div class="page" role="main">
+    <header class="topbar" role="banner">
+      <h1>Marwadi University</h1>
+      <p>Department of Computer Engineering</p>
+    </header>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#">Vision</a>
+      <a href="#">Mission</a>
+      <a href="#">Program Specific Outcomes</a>
+      <a href="#">Courses Offered</a>
+      <a href="#">Top Recruiters</a>
+    </nav>
+
+    <main class="content">
+      <!-- Vision -->
+      <section class="card" aria-labelledby="vision">
+        <h3 id="vision">Vision</h3>
+        <p>
+          To impart quality technical education through research, innovation, and teamwork for creating professionally superior and ethically strong manpower that meets the global challenges of engineering industries and research organizations.
+        </p>
+      </section>
+
+      <!-- Mission -->
+      <section class="card" aria-labelledby="mission">
+        <h3 id="mission">Mission</h3>
+        <ul>
+          <li>Maintain state-of-the-art ICT enabled teaching and learning methodologies.</li>
+          <li>Enable graduates to become digital age literates, innovators, and professionals.</li>
+          <li>Provide skills, knowledge, and attitudes for success as engineers, leaders, and entrepreneurs.</li>
+          <li>Prepare graduates for lifelong learning and career challenges.</li>
+        </ul>
+      </section>
+
+      <!-- Program Specific Outcomes -->
+      <section class="card psos" aria-labelledby="psos">
+        <h3 id="psos">Program Specific Outcomes (PSOs)</h3>
+        <ol>
+          <li>Apply knowledge and competence in the design and development of computer-based systems addressing industrial and social needs.</li>
+          <li>Adapt to emerging technological advancements including cybersecurity, AR/VR, and IoT.</li>
+        </ol>
+      </section>
+
+      <div class="toolbar" aria-hidden="true">
+        <span>▦</span>
+        <span>🔍</span>
+        <span style="opacity:.6;">A-A - File.jpg</span>
+        <span style="margin-left:auto;opacity:.6;">ENG | 15-07-2025</span>
+      </div>
+
+      <!-- Courses Offered -->
+      <section class="card courses" aria-labelledby="courses">
+        <h3 id="courses">Courses Offered</h3>
+        <ul>
+          <li>B.Tech in Computer Engineering</li>
+          <li>B.Tech in Cyber Security</li>
+          <li>M.Tech in Computer Engineering</li>
+          <li>Ph.D. in Computer Science &amp; Engineering</li>
+        </ul>
+      </section>
+
+      <!-- Top Recruiters -->
+      <section class="card recruiters" aria-labelledby="recruiters">
+        <h3 id="recruiters">Top Recruiters</h3>
+        <ul>
+          <li>TCS</li>
+          <li>Infosys</li>
+          <li>Capgemini</li>
+          <li>Wipro</li>
+          <li>LTI Mindtree</li>
+          <li>Cognizant</li>
+          <li>Reliance Industries</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      © 2025 Marwadi University - Department of Computer Engineering
+    </footer>
+  </div>
+</body>
+</html>
